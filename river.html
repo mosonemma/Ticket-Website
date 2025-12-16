@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanyangareng River Carnival — Fundraising Event</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="river.css">
+</head>
+<body>
+
+<!-- BACK BUTTON -->
+<div class="top-bar">
+  <a href="ticket.html" class="back-link">← Back to Main Events</a>
+</div>
+
+<!-- POSTER -->
+<div class="poster-section">
+  <img src="river.jpg" alt="River Carnival Poster" class="poster-img">
+  <div class="poster-overlay"></div>
+  <div class="poster-text">
+    <h1>Kanyangareng River Carnival</h1>
+    <p>5th January 2026 — Amudat District</p>
+  </div>
+</div>
+<div class="previous-achievements">
+  <p>
+    See the previous years' achievements 
+    <a href="https://creation-steppers.netlify.app/photo" target="_blank">here</a>.
+  </p>
+</div>
+
+<!-- MAIN EVENT CARD -->
+<div class="event-card">
+
+  <!-- EVENT INFO LEFT -->
+  <div class="event-info">
+    <h2>About the Event</h2>
+    <p class="description">
+      The annual Kanyangareng River Carnival is a powerful youth-centered 
+      edutainment festival held every 5th January along the river banks of 
+      Amudat. Founded in 2017, it has grown into a platform that empowers, 
+      inspires and unites young people through creativity, culture, 
+      mentorship and community engagement.
+    </p>
+    <p class="description">
+      This year, we invite well-wishers and partners to join a fundraising 
+      drive to support logistics, youth development activities, 
+      educational programs and community empowerment projects.
+    </p>
+  </div>
+
+  <!-- PAYMENT INFO RIGHT -->
+  <div class="event-payment">
+    <h3>Support the Movement — Choose a Donation Method</h3>
+
+    <!-- MTN -->
+    <div class="payment-option">
+      <h4>MTN Mobile Money</h4>
+      Number: <strong>0770 000 000</strong>
+      <form class="pay-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Amount (UGX)" required>
+        <input type="tel" placeholder="Your Phone Number" required>
+        <button type="submit" class="donate-btn">Donate via MTN</button>
+      </form>
+    </div>
+
+    <!-- Airtel -->
+    <div class="payment-option">
+      <h4>Airtel Money</h4>
+      Number: <strong>0700 000 000</strong>
+      <form class="pay-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Amount (UGX)" required>
+        <input type="tel" placeholder="Your Phone Number" required>
+        <button type="submit" class="donate-btn">Donate via Airtel</button>
+      </form>
+    </div>
+
+    <!-- Bank -->
+    <div class="payment-option">
+      <h4>Bank Deposit</h4>
+      Stanbic Bank Uganda<br>
+      Account Name: Creation Steppers Foundation<br>
+      Account Number: <strong>1234567890</strong>
+      <form class="pay-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Amount (UGX)" required>
+        <input type="tel" placeholder="Phone / Reference" required>
+        <button type="submit" class="donate-btn">I Have Donated via Bank</button>
+      </form>
+    </div>
+
+    <!-- Physical / Cash -->
+    <div class="payment-option">
+      <h4>Physical Support / Cash</h4>
+      Reach our team at Warrior Promotions & Jedark Home of Creativity.
+      <form class="pay-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Type of Support (Cash / Items)" required>
+        <button type="submit" class="donate-btn">Submit Support</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  &copy; 2026 Kanyangareng River Carnival
+</div>
+
+</body>
+<button onclick="makePayment()">Donate via Mobile Money</button>
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+<script>
+function makePayment(){
+  FlutterwaveCheckout({
+    public_key: "YOUR_PUBLIC_KEY",
+    tx_ref: "tx-" + Date.now(),
+    amount: 10000,
+    currency: "UGX",
+    payment_options: "mobilemoneyuganda",
+    redirect_url: "https://yourwebsite.com/thank-you",
+    customer: { email: "user@example.com", phonenumber: "0770000000", name: "John Doe" },
+  });
+}
+</script>
+
+</html>

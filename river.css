@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* Top Bar / Back Button */
+.top-bar {
+  padding: 12px 20px;
+  background: #111;
+  text-align: left;
+}
+.back-link {
+  color: #f4d063;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+.back-link:hover {
+  color: #fff;
+}
+
+/* Poster Section */
+.poster-section {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 20px;
+}
+.poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.poster-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.75));
+}
+.poster-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+}
+.poster-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+.poster-text p {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.previous-achievements {
+  margin: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.previous-achievements a {
+  color: #f4d063;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.previous-achievements a:hover {
+  text-decoration: underline;
+  color: #d7b44f;
+}
+
+/* Main Card Layout */
+.event-card {
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Left Side */
+.event-info {
+  flex: 1.4;
+  padding: 35px;
+}
+.event-info h2 {
+  font-weight: 800;
+  color: #111;
+}
+.event-info .description {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Payment Section */
+.event-payment {
+  flex: 1;
+  background: #111;
+  color: #fff;
+  padding: 35px;
+}
+.event-payment h3 {
+  color: #f4d063;
+  font-size: 24px;
+}
+.payment-option {
+  margin-top: 18px;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+.payment-option h4 {
+  color: #f4d063;
+  margin-bottom: 6px;
+}
+.pay-form input {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+}
+.donate-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #f4d063;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.donate-btn:hover {
+  background: #d7b44f;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive */
+@media(max-width: 850px){
+  .event-card {
+    flex-direction: column;
+  }
+}
