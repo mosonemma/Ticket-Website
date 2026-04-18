@@ -1,0 +1,214 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 450px;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* BUTTONS */
+.btn-gold {
+  background-color: #f4d063;
+  color: #111;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  transition: 0.3s;
+}
+.btn-gold:hover {
+  background-color: #d7b44f;
+  color: #111;
+}
+.btn-donate {
+  background-color: #111;
+  color: #f4d063;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 2px solid #f4d063;
+  transition: 0.3s;
+}
+.btn-donate:hover {
+  background-color: #f4d063;
+  color: #111;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* FEATURED EVENTS CARDS */
+.event-head-card {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  color: #111;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.event-head-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.event-head-card img {
+  width: 100%;
+  display: block;
+}
+.ehc-info {
+  padding: 15px;
+}
+.ehc-info strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.ehc-info span {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* FEATURED HIGHLIGHT */
+.event-head-card.featured {
+  border: 3px solid #f4d063;
+  position: relative;
+}
+.event-head-card.featured::after {
+  content: "Featured";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f4d063;
+  color: #111;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* CATEGORY BOXES */
+.category-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* UPCOMING EVENTS CARDS */
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.event-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.event-details {
+  padding: 15px;
+}
+.event-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.event-meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+/* Buttons inside Upcoming Events */
+.event-details .btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Buy Ticket Button */
+.event-details .btn-gold {
+  background-color: #f4d063;
+  color: #111;
+  border: none;
+}
+.event-details .btn-gold:hover {
+  background-color: #d7b44f;
+  color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Make a Donation Button */
+.event-details .btn-donate {
+  background-color: #111;
+  color: #f4d063;
+  border: 2px solid #f4d063;
+}
+.event-details .btn-donate:hover {
+  background-color: #f4d063;
+  color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #f4d063;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .hero-section {
+    height: 350px;
+  }
+  .event-head-card.featured::after {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}

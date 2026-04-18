@@ -1,0 +1,190 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #06281f, #0b3d2e);
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 500px;
+  background: linear-gradient(rgba(6,40,31,0.8), rgba(6,40,31,0.9)),
+              url('hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* TITLES */
+.event-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #b6ff00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.event-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.event-date {
+  font-size: 16px;
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.btn-gold {
+  background: linear-gradient(45deg, #ff6a00, #ff8c00);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 25px;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255,106,0,0.5);
+}
+
+/* SECTIONS */
+.details-section {
+  padding: 60px 20px;
+}
+
+.details-section h2,
+.details-section h3 {
+  color: #b6ff00;
+  font-weight: 800;
+}
+
+.details-section p {
+  color: #ddd;
+}
+
+/* LISTS */
+.details-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.details-section ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.details-section ul li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #ff6a00;
+}
+
+/* POSTER IMAGE */
+.event-poster {
+  width: 100%;
+  max-width: 450px; /* controls size */
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #ff6a00;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* TICKETS */
+.ticket-section {
+  padding: 60px 20px;
+}
+
+.ticket-card {
+  background: #0b3d2e;
+  border: 2px solid #b6ff00;
+  border-radius: 15px;
+  padding: 25px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(182,255,0,0.3);
+}
+
+.ticket-card h3 {
+  color: #b6ff00;
+  font-weight: 800;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff6a00;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 40px;
+  background: rgba(0,0,0,0.3);
+  border-top: 2px solid #ff6a00;
+  border-bottom: 2px solid #ff6a00;
+}
+
+.contact-section h3 {
+  color: #b6ff00;
+}
+
+/* SOCIAL */
+.social-section {
+  padding: 20px;
+}
+
+.social-section h4 {
+  color: #ff6a00;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #b6ff00;
+  color: #b6ff00;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #b6ff00;
+  color: #06281f;
+}
+
+/* FOOTER */
+.footer {
+  background: #06281f;
+  color: #b6ff00;
+  padding: 20px;
+  border-top: 2px solid #ff6a00;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .event-title {
+    font-size: 32px;
+  }
+
+  .hero-section {
+    height: 380px;
+  }
+
+  .ticket-card {
+    padding: 20px;
+  }
+}

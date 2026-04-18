@@ -1,0 +1,132 @@
+/* ===== SAVANNAH EVENT PAGE STYLES ===== */
+
+:root {
+  --green: #11492f;
+  --accent-start: #7db32b;
+  --accent-end: #d94b4b;
+  --card-shadow: 0 10px 30px rgba(16,24,32,0.12);
+  --radius: 18px;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+  padding-bottom: 40px;
+  color: #102018;
+  background: linear-gradient(180deg,#ffffff 0%, #fbfcfb 60%);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+}
+.logo {
+  width: 46px; height: 46px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--card-shadow);
+  font-weight: 700;
+  color: var(--accent-start);
+}
+
+.back-btn-container {
+  text-align: left;
+  padding: 20px;
+}
+
+.back-btn {
+  background-color: #d4af37;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #b89428;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 18px 8px 28px;
+}
+.hero h1 {
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--green);
+}
+.hero p { margin: 12px 0; color: #274530; font-size: 18px; }
+.cta {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,var(--accent-start),var(--accent-end));
+  color: white;
+  box-shadow: 0 8px 20px rgba(189,43,43,0.12);
+  text-decoration: none;
+}
+
+/* Poster Card */
+.poster-card {
+  max-width: 520px;
+  margin: 20px auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  background: linear-gradient(180deg,#ffffff,#f7f8f7);
+}
+.poster-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Event Details */
+.details {
+  margin-top: 22px;
+  padding: 4px 6px 0;
+}
+.details h2 {
+  font-family: Merriweather, serif;
+  font-size: 26px;
+  color: var(--green);
+}
+.meta { margin-bottom: 20px; }
+.meta .row { display: flex; gap: 12px; align-items: center; }
+.meta .row div:first-child {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-start);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Tickets */
+#tickets { text-align: center; margin-top: 20px; }
+#tickets .cta { font-size: 18px; }
+
+/* Footer */
+footer {
+  margin-top: 28px;
+  background: #0f1b14;
+  color: #fff;
+  padding: 18px 16px;
+  text-align: center;
+  border-radius: 12px;
+}
